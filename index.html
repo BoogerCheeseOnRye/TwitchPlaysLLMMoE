@@ -22,7 +22,7 @@
                 <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 <span class="font-semibold text-lg tracking-tight">MULTI-ROBOT ART EXHIBIT</span>
                 <span class="text-xs px-3 py-1 bg-amber-500 text-black rounded-full font-medium">ENDLESS FAST CHATTER</span>
-                <span class="text-xs text-zinc-400">boogercheeseonry</span>
+                <span class="text-xs text-zinc-400">TWITCH</span>
             </div>
             <button onclick="toggleSettings()" class="ml-auto text-zinc-400 hover:text-white">⚙️</button>
         </div>
@@ -163,7 +163,7 @@
         }
 
         function connectTwitch() {
-            const channel = 'boogercheeseonry';
+            const channel = 'TWITCH-Channel'; 
             if (twitchWS) twitchWS.close();
             twitchWS = new WebSocket('wss://irc-ws.chat.twitch.tv:443');
             twitchWS.onopen = () => {
